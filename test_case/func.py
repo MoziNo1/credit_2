@@ -16,6 +16,8 @@ class TestCredit(object):
         headers = eval(self.headers)
         res = s.request("post", url=login_url, data=case_data, headers=headers)
         cookies = requests.utils.dict_from_cookiejar(s.cookies)
+        with open("D:\credit\log\cookies.txt", 'w') as f:
+            f.write(str(cookies))
         # print(res.text)
         print(cookies)
         return cookies

@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\common\database_handler.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\common\excel_handler.py">
           <value>
             <Attribute>
@@ -28,6 +35,13 @@
           <value>
             <Attribute>
               <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\conf\config.ini">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
             </Attribute>
           </value>
         </entry>
@@ -74,6 +88,13 @@
           </value>
         </entry>
         <entry key="\test_case\test_add.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\test_case\test_collateral.py">
           <value>
             <Attribute>
               <option name="separator" value="," />

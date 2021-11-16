@@ -13,11 +13,11 @@ res = s.post(url=login_url, data=login_data,headers=headers)
 cookies = requests.utils.dict_from_cookiejar(s.cookies)
 print(res.text)
 print(cookies)
-for i in range(130,150):
+for i in range(200,210):
     add_data = {"loginName": i,
                 "realname": "压测",
-                "password": "a111111",
-                "repassword": "a111111",
+                "password": "1",
+                "repassword": "1",
                 "statusCd": "1",
                 "buttonType": "saveBizInf",
                 "_actionLoaction": "我的设置 > 系统管理 > 用户管理 > 用户信息",

@@ -28,6 +28,7 @@ class TestCredit(object):
         check_data = eval(case_data["data"])
         # add_data = case_data["data"]
         res = requests.request("post", url=check_url, cookies=cookie, data=check_data, headers=headers)
+        print(res)
         return res.json()
 
     def check_corporat_add(self, cookie, case_data):

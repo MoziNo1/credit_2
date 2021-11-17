@@ -23,7 +23,7 @@ class TestAddCust(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         # 前置条件，需获取到登陆后的cookie
-        cls.cookies = TestCredit().login(login_data=conf.get("login", "login_data"))
+        cls.cookies = TestCredit().login()
         res = TestCredit().check_add(cls.cookies, cls.check_data)
         print(res)
         # 从检验是否可新增接口中获取新增用户所用的数据，进行参数关联

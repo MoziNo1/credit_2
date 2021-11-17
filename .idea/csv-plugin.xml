@@ -31,6 +31,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\common\login.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\common\tool_handler.py">
           <value>
             <Attribute>
@@ -81,6 +88,13 @@
           </value>
         </entry>
         <entry key="\test_case\test_01.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\test_case\test_11.py">
           <value>
             <Attribute>
               <option name="separator" value="," />

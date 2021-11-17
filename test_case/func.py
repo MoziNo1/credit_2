@@ -1,6 +1,7 @@
 import requests
 import unittestreport
 from common.conf_handler import conf
+import re
 
 
 class TestCredit(object):
@@ -9,15 +10,23 @@ class TestCredit(object):
         self.basic_url = conf.get("common", "basic_url")
         self.headers = conf.get("common", "headers")
 
-    def login(self, login_data):
+    def login(self):
         s = requests.session()
-        case_data = eval(login_data)
+        # 输入登录用户名
+        login_name = input('请输入您的用户名')
+        # 正则提取已获取的前端加密密码
+        with open(r'D:\credit\data\146_password.txt', encoding='utf-8') as f:
+            result = f.read()
+            login_password = re.findall(f'username={login_name},password=(.*?)\n', result)
+        login_data = {"loginUriSuffix": "", "username": login_name, "password": login_password[0]}
+        print(login_data)
         login_url = self.basic_url + "/login"
         headers = eval(self.headers)
-        res = s.request("post", url=login_url, data=case_data, headers=headers)
+        res = s.request("post", url=login_url, data=login_data, headers=headers)
+        # print(res.text)
         cookies = requests.utils.dict_from_cookiejar(s.cookies)
-        with open("D:\credit\log\cookies.txt", 'w') as f:
-            f.write(str(cookies))
+        # with open("D:\credit\log\cookies.txt", 'w') as f:
+        #     f.write(str(cookies))
         # print(res.text)
         print(cookies)
         return cookies

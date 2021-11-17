@@ -13,7 +13,7 @@ class TestCheckCust(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls) -> None:
-        cls.cookies = TestCredit().login(login_data=conf.get("login", "login_data"))
+        cls.cookies = TestCredit().login()
         # print(cls.cookies)
 
     @list_data(login_data)

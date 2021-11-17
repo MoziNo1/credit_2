@@ -136,3 +136,7 @@
 [2021-11-16 14:45:45,700][MainThread:15292][task_id:log_output][test_add.py:49][INFO][保存成功]
 [2021-11-17 17:18:03,280][MainThread:9592][task_id:log_output][test_add.py:31][INFO][新客户,可以新增]
 [2021-11-17 17:18:07,039][MainThread:9592][task_id:log_output][test_add.py:49][INFO][保存成功]
+[2021-11-17 17:54:15,905][MainThread:17484][task_id:log_output][test_add.py:31][INFO][新客户,可以新增]
+[2021-11-17 17:54:53,319][MainThread:22748][task_id:log_output][test_add.py:32][INFO][新客户,可以新增]
+[2021-11-17 17:57:14,675][MainThread:13236][task_id:log_output][test_add.py:32][INFO][新客户,可以新增]
+[2021-11-17 17:57:18,259][MainThread:13236][task_id:log_output][test_add.py:50][INFO][保存成功]

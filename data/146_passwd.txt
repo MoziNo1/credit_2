@@ -1,2 +1,4 @@
 Request body: loginUriSuffix=&username=028057&password=MV9tc2RwXzAuNTIzNzc2MjM1MTk0MDg4NF9tc2RwX3R5cGU9MA%3D%3D
 Request body: loginUriSuffix=&username=492256&password=MV9tc2RwXzAuODY4NDQ1MjA2OTc0NDM0X21zZHBfdHlwZT0w
+Request body: loginUriSuffix=&username=506025&password=MC41NjM3OTI1OTE0MzM1NTAyX21zZHBfMV9tc2RwX3R5cGU9MQ%3D%3D
+Request body: loginUriSuffix=&username=506028&password=MC4zOTkwMDYwMjY0MDQzNTUzNF9tc2RwXzFfbXNkcF90eXBlPTE%3D

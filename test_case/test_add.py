@@ -24,7 +24,8 @@ class TestAddCust(unittest.TestCase):
     def setUpClass(cls) -> None:
         # 前置条件，需获取到登陆后的cookie
         cls.cookies = TestCredit().login()
-        res = TestCredit().check_add(cls.cookies, cls.check_data)
+        print(cls.cookies)
+        res = TestCredit().check_add(cls.cookies[0], cls.check_data)
         print(res)
         # 从检验是否可新增接口中获取新增用户所用的数据，进行参数关联
         cls.replace = [res["data"]["cstNumb"], res["data"]["crdtNo"], res["data"]["cstNm"]]
@@ -41,7 +42,7 @@ class TestAddCust(unittest.TestCase):
         # print(data)
         item["data"] = data
         # print(item["data"])
-        res = TestCredit().cust_personal_add(self.cookies, item)
+        res = TestCredit().cust_personal_add(self.cookies[0], item)
         # print(self.cookies)
         print(res)
         try:

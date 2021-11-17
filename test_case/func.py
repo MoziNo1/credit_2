@@ -29,7 +29,8 @@ class TestCredit(object):
         #     f.write(str(cookies))
         # print(res.text)
         print(cookies)
-        return cookies
+        # 登陆后返回cookie和登录名
+        return cookies, login_name
 
     def check_add(self, cookie, case_data):
         check_url = self.basic_url + case_data["url"]
